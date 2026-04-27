@@ -18,7 +18,7 @@ export const Contact = () => {
       <div>
         <SHead eyebrow="Contact" title={`Let's build <span style="font-style:italic;font-family:'Instrument Serif',serif;font-weight:400;color:${C.orange}">with you.</span>`} sub="Whether you need software, branding, wellness coaching, or partnership opportunities, we'd love to hear from you."/>
         <div style={{ marginTop:32, display:"flex", flexDirection:"column", gap:16 }}>
-          {[["✉️","Email","peter@hooom.org"],["📍","Location","Lagos, Nigeria"],["💬","Social","Instagram · LinkedIn · Twitter/X"]].map(([ico,label,val])=>(
+          {[["✉️","Email","admin@hooom.org"],["📍","Location","Lagos, Nigeria"],["💬","Social","Instagram · LinkedIn · Twitter/X"]].map(([ico,label,val])=>(
             <div key={label} style={{ display:"flex", alignItems:"center", gap:14 }}>
               <div style={{ width:40, height:40, borderRadius:10, background:C.white, display:"flex", alignItems:"center", justifyContent:"center", fontSize:"1rem", flexShrink:0, boxShadow:"0 2px 8px rgba(14,19,34,.07)" }}>{ico}</div>
               <div>

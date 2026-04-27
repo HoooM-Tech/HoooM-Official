@@ -7,18 +7,18 @@ import { Ph } from "../ui/Ph";
 
 // Assets
 import w1 from "../../assets/IMG_2529.webp";
-import w2 from "../../assets/IMG_2519.webp";
+import w2 from "../../assets/IMG_2534.webp";
 import w3 from "../../assets/IMG_2526.webp";
 import w4 from "../../assets/IMG_2525.webp";
 import w5 from "../../assets/IMG_2530.webp";
 import w6 from "../../assets/IMG_2536.webp";
 
 /* ── WORK CARD ── */
-const WorkCard = ({ tag, name, type, src }) => {
+const WorkCard = ({ tag, name, type, src, url }) => {
   const [hov, setHov] = useState(false);
-  return (
+  const card = (
     <div onMouseEnter={() => setHov(true)} onMouseLeave={() => setHov(false)}
-      style={{ borderRadius: 16, overflow: "hidden", background: C.white, transform: hov ? "translateY(-4px)" : "none", boxShadow: hov ? "0 16px 44px rgba(14,19,34,.1)" : "none", transition: "all .28s" }}>
+      style={{ borderRadius: 16, overflow: "hidden", background: C.white, transform: hov ? "translateY(-4px)" : "none", boxShadow: hov ? "0 16px 44px rgba(14,19,34,.1)" : "none", transition: "all .28s", height: "100%" }}>
       <Ph src={src} label={`${name} Screenshot`} height={180} />
       <div style={{ padding: "18px 20px" }}>
         <div style={{ fontFamily: "'Syne',sans-serif", fontSize: "0.66rem", fontWeight: 700, color: C.cyan, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 5 }}>{tag}</div>
@@ -27,16 +27,25 @@ const WorkCard = ({ tag, name, type, src }) => {
       </div>
     </div>
   );
+
+  if (url) {
+    return (
+      <a href={url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", height: "100%" }}>
+        {card}
+      </a>
+    );
+  }
+  return card;
 };
 
 /* ── WORK ── */
 const works = [
-  { tag: "Tech by HoooM", name: "Karsto", type: "Digital Product", src: w1 },
-  { tag: "Tech by HoooM", name: "Logic Church", type: "Web Platform", src: w2 },
-  { tag: "Tech by HoooM", name: "Lizza Atelier", type: "E-Commerce", src: w3 },
-  { tag: "Orbbit by HoooM", name: "RevIq", type: "Brand Identity", src: w4 },
-  { tag: "Orbbit by HoooM", name: "GAH Awards", type: "Campaign Strategy", src: w5 },
-  { tag: "Orbbit by HoooM", name: "Dice Africa", type: "Creative Direction", src: w6 },
+  { tag: "Tech by HoooM", name: "Karsto", type: "Digital Product", src: w1, url: "#" },
+  { tag: "Tech by HoooM", name: "Logic Church", type: "Web Platform", src: w2, url: "#" },
+  { tag: "Tech by HoooM", name: "Lizza Atelier", type: "Luxury Fashion House", src: w3, url: "https://www.lizzaatelier.com/" },
+  { tag: "Orbbit by HoooM", name: "RevIq", type: "Brand Identity", src: w4, url: "#" },
+  { tag: "Orbbit by HoooM", name: "GAH Awards", type: "Campaign Strategy", src: w5, url: "#" },
+  { tag: "Orbbit by HoooM", name: "Dice Africa", type: "Creative Direction", src: w6, url: "#" },
 ];
 
 export const Work = () => {
