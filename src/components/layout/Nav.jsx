@@ -3,10 +3,12 @@ import { C } from "../../constants";
 import { useBreakpoint } from "../../hooks/useBreakpoint";
 import { Btn } from "../ui/Btn";
 
+import logo from "../../assets/hooomlogo.png";
+
 /* ── NAV LINK ── */
 const NavLink = ({ href, children }) => {
   const [hov, setHov] = useState(false);
-  return <a href={href} style={{ fontSize:"0.86rem", fontWeight:500, color:hov?C.navy:C.mid, textDecoration:"none", transition:"color .2s" }} onMouseEnter={()=>setHov(true)} onMouseLeave={()=>setHov(false)}>{children}</a>;
+  return <a href={href} style={{ fontSize: "0.86rem", fontWeight: 500, color: hov ? C.navy : C.mid, textDecoration: "none", transition: "color .2s" }} onMouseEnter={() => setHov(true)} onMouseLeave={() => setHov(false)}>{children}</a>;
 };
 
 /* ── NAV ── */
@@ -19,13 +21,13 @@ export const Nav = () => {
     window.addEventListener("scroll", h);
     return () => window.removeEventListener("scroll", h);
   }, []);
-  const links = [["Home","#home"],["About","#ecosystem"],["Companies","#companies"],["Work","#work"],["Insights","#insights"],["Contact","#contact"]];
+  const links = [["Home", "#home"], ["About", "#ecosystem"], ["Companies", "#companies"], ["Work", "#work"], ["Insights", "#insights"], ["Contact", "#contact"]];
   const px = isTab ? "20px" : "56px";
   return (
     <>
-      <nav style={{ position:"fixed", top:0, left:0, right:0, zIndex:200, display:"flex", alignItems:"center", justifyContent:"space-between", padding:`${scrolled?"13px":"20px"} ${px}`, background:"rgba(255,255,255,0.94)", backdropFilter:"blur(14px)", borderBottom:`1px solid ${C.faint}`, transition:"padding .3s" }}>
-        <a href="#home" style={{ fontFamily:"'Syne',sans-serif", fontSize:"1.4rem", fontWeight:800, color:C.navy, textDecoration:"none", letterSpacing:"-0.02em" }}>
-          Ho<span style={{color:C.orange}}>oo</span>M
+      <nav style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 200, display: "flex", alignItems: "center", justifyContent: "space-between", padding: `${scrolled ? "13px" : "20px"} ${px}`, background: "rgba(255,255,255,0.94)", backdropFilter: "blur(14px)", borderBottom: `1px solid ${C.faint}`, transition: "padding .3s" }}>
+        <a href="#home" style={{ display: "flex", alignItems: "center" }}>
+          <img src={logo} alt="HoooM Logo" style={{ height: scrolled ? 20 : 22, width: "auto", transition: "height .3s" }} />
         </a>
 
         {/* Desktop links */}

@@ -7,8 +7,8 @@ import { Ph } from "../ui/Ph";
 
 // Assets
 import w1 from "../../assets/IMG_2529.webp";
-import w2 from "../../assets/IMG_2534.webp";
-import w3 from "../../assets/IMG_2526.webp";
+import w2 from "../../assets/logicchurch.png";
+import w3 from "../../assets/lizza.png";
 import w4 from "../../assets/IMG_2525.webp";
 import w5 from "../../assets/IMG_2530.webp";
 import w6 from "../../assets/IMG_2536.webp";
@@ -41,7 +41,7 @@ const WorkCard = ({ tag, name, type, src, url }) => {
 /* ── WORK ── */
 const works = [
   { tag: "Tech by HoooM", name: "Karsto", type: "Digital Product", src: w1, url: "#" },
-  { tag: "Tech by HoooM", name: "Logic Church", type: "Web Platform", src: w2, url: "#" },
+  { tag: "Tech by HoooM", name: "Logic Church", type: "Web Platform", src: w2, url: "https://thelogicchurch.org/" },
   { tag: "Tech by HoooM", name: "Lizza Atelier", type: "Luxury Fashion House", src: w3, url: "https://www.lizzaatelier.com/" },
   { tag: "Orbbit by HoooM", name: "RevIq", type: "Brand Identity", src: w4, url: "#" },
   { tag: "Orbbit by HoooM", name: "GAH Awards", type: "Campaign Strategy", src: w5, url: "#" },
