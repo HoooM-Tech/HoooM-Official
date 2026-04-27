@@ -12,7 +12,7 @@ const faqs = [
   { q:"Do you work with clients outside Nigeria?", a:"Yes. While headquartered in Lagos, we work with clients across Africa and internationally. Our digital services are fully remote-compatible." },
   { q:"How long does a typical project take?", a:"A branding project typically runs 3–6 weeks. Software builds range from 6 to 16 weeks depending on complexity. We scope every project individually and give a clear timeline upfront." },
   { q:"Is Physifit available for corporate wellness programs?", a:"Yes. Physifit offers tailored corporate wellness programs in addition to individual coaching. We specialize in senior and postpartum clients but can build programs for specific organizational needs." },
-  { q:"How do I get started?", a:"Fill out the contact form, email peter@hooom.org, or reach out via WhatsApp. We'll schedule a discovery call and recommend the right HoooM company or combination for you." },
+  { q:"How do I get started?", a:"Fill out the contact form, email it@hooom.org, or reach out via WhatsApp. We'll schedule a discovery call and recommend the right HoooM company or combination for you." },
 ];
 
 export const FAQ = () => {
