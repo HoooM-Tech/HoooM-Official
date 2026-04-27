@@ -4,7 +4,7 @@ import { useState } from "react";
 export const WAFab = () => {
   const [hov, setHov] = useState(false);
   return (
-    <a href="https://wa.me/2348000000000" target="_blank" rel="noreferrer"
+    <a href="https://wa.me/2347038920250" target="_blank" rel="noreferrer"
       onMouseEnter={()=>setHov(true)} onMouseLeave={()=>setHov(false)}
       style={{ position:"fixed", bottom:24, right:24, zIndex:300, width:50, height:50, borderRadius:"50%", background:"#25D366", display:"flex", alignItems:"center", justifyContent:"center", textDecoration:"none", boxShadow: hov?"0 8px 28px rgba(37,211,102,.5)":"0 4px 20px rgba(37,211,102,.38)", transform:hov?"translateY(-4px)":"none", transition:"all .2s" }}>
       <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff">
