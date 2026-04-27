@@ -44,7 +44,7 @@ export const Hero = () => {
               </div>
             ))}
           </div>
-          <span style={{ fontSize: "0.8rem", color: C.mid }}><strong style={{ color: C.navy }}>500+ clients</strong> · 10+ years</span>
+          <span style={{ fontSize: "0.8rem", color: C.mid }}><strong style={{ color: C.navy }}>500+ clients</strong> · 6+ years</span>
         </div>
       </div>
 

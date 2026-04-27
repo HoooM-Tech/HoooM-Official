@@ -3,7 +3,7 @@ import { useBreakpoint } from "../../hooks/useBreakpoint";
 import { Reveal } from "../ui/Reveal";
 
 /* ── STATS ── */
-const stats = [["4","Active Companies"],["500+","Clients Trained"],["10+","Years of Execution"],["12+","Projects Delivered"]];
+const stats = [["4","Active Companies"],["500+","Clients Trained"],["6+","Years of Execution"],["12+","Projects Delivered"]];
 export const Stats = () => {
   const { isMob } = useBreakpoint();
   return (
