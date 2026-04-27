@@ -6,8 +6,8 @@ import { Ph } from "../ui/Ph";
 
 /* ── TESTIMONIALS ── */
 const testis = [
-  { q:"HoooM delivered a digital product that transformed how we operate. Professional, creative, and deeply committed to getting it right.", name:"Lizza Atelier . Elizabeth", role:"CEO · Tech by HoooM client" },
-  { q:"Orbbit gave our brand a completely new identity. The strategy was sharp, the execution flawless. We saw real growth from day one.", name:"Valore Consulting/Reviq . Ayomide Akodu", role:"Founder · Orbbit by HoooM" },
+  { q:"HoooM delivered a digital product that transformed how we operate. Professional, creative, and deeply committed to getting it right.", name:"Lizza Atelier . Elizabeth", role:"CEO · Lizza Atelier" },
+  { q:"Orbbit gave our brand a completely new identity. The strategy was sharp, the execution flawless. We saw real growth from day one.", name:"Ayomide Akodu", role:"Founder · Valore Consulting/Reviq" },
   { q:"Physifit changed how I think about my health entirely. The coaching is specialized, patient, and genuinely transformative.", name:"Sen. Ikeyina", role:"Client · Physifit by HoooM" },
 ];
 
