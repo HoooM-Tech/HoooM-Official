@@ -23,7 +23,7 @@ export const Footer = () => {
         {[
           ["Companies",  ["Tech by HoooM","Orbbit by HoooM","Physifit by HoooM","Auto Pay by HoooM"], ["#companies","#companies","#companies","#companies"]],
           ["Navigate",   ["Home","About","Work","Insights","Contact"], ["#home","#ecosystem","#work","#insights","#contact"]],
-          ["Connect",    ["Instagram","LinkedIn","Twitter / X","peter@hooom.org"], ["#","#","#","mailto:peter@hooom.org"]],
+          ["Connect",    ["Instagram","LinkedIn","Twitter / X","admin@hooom.org"], ["#","#","#","mailto:admin@hooom.org"]],
         ].map(([title,links,hrefs])=>(
           <div key={title}>
             <div style={{ fontFamily:"'Syne',sans-serif", fontSize:"0.7rem", fontWeight:700, letterSpacing:"0.1em", textTransform:"uppercase", color:C.cyan, marginBottom:14 }}>{title}</div>
