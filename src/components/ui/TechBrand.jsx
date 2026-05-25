@@ -69,7 +69,7 @@ export const TechBrand = ({ style }) => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           style={{ 
-            fontFamily: "'Syne', sans-serif", 
+            fontFamily: "'Poppins', sans-serif",
             fontSize: "3.5rem", 
             fontWeight: 800, 
             color: "#fff", 

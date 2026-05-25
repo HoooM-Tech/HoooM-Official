@@ -61,7 +61,7 @@ export const AutoPayBrand = ({ style }) => {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           style={{ 
-            fontFamily: "'Syne', sans-serif", 
+            fontFamily: "'Poppins', sans-serif", 
             fontSize: "3.2rem", 
             fontWeight: 800, 
             color: "#fff", 

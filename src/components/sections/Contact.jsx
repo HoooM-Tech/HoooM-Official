@@ -18,7 +18,7 @@ export const Contact = () => {
     }
   }, [state.succeeded]);
 
-  const inp = { width: "100%", background: C.off, border: "2px solid transparent", borderRadius: 10, padding: "11px 14px", fontFamily: "'Inter',sans-serif", fontSize: "0.87rem", color: C.navy, outline: "none", transition: "border-color .2s, background .2s" };
+  const inp = { width: "100%", background: C.off, border: "2px solid transparent", borderRadius: 10, padding: "11px 14px", fontFamily: "'Open Sans',sans-serif", fontSize: "0.87rem", color: C.navy, outline: "none", transition: "border-color .2s, background .2s" };
   const lbl = { display: "block", fontSize: "0.74rem", fontWeight: 700, color: C.navy, marginBottom: 6 };
   
   const focus = e => { e.target.style.borderColor = C.orange; e.target.style.background = "#fff"; };
@@ -27,7 +27,7 @@ export const Contact = () => {
   return (
     <section id="contact" style={{ padding: `80px ${isTab ? "20px" : "56px"}`, background: C.off, display: "grid", gridTemplateColumns: isTab ? "1fr" : "1fr 1fr", gap: isTab ? 48 : 64, alignItems: "start" }}>
       <div>
-        <SHead eyebrow="Contact" title={`Let's build <span style="font-style:italic;font-family:'Instrument Serif',serif;font-weight:400;color:${C.orange}">with you.</span>`} sub="Whether you need software, branding, wellness coaching, or partnership opportunities, we'd love to hear from you." />
+        <SHead eyebrow="Contact" title={`Let's build <span style="font-style:italic;font-family:'Poppins',sans-serif;font-weight:400;color:${C.orange}">with you.</span>`} sub="Whether you need software, branding, wellness coaching, or partnership opportunities, we'd love to hear from you." />
         <div style={{ marginTop: 32, display: "flex", flexDirection: "column", gap: 16 }}>
           {[["✉️", "Email", "it@hooom.org"], ["📍", "Location", "Lagos, Nigeria"], ["💬", "Social", "Instagram · LinkedIn · Twitter/X"]].map(([ico, label, val]) => (
             <div key={label} style={{ display: "flex", alignItems: "center", gap: 14 }}>

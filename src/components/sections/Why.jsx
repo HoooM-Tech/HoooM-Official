@@ -14,9 +14,9 @@ const Pillar = ({ n, t, d }) => {
   return (
     <div onMouseEnter={() => setHov(true)} onMouseLeave={() => setHov(false)}
       style={{ padding: "18px 0", borderBottom: `1px solid ${C.faint}`, display: "grid", gridTemplateColumns: "34px 1fr", gap: 14, paddingLeft: hov ? 8 : 0, transition: "padding-left .2s" }}>
-      <div style={{ fontFamily: "'Syne',sans-serif", fontSize: "0.66rem", fontWeight: 700, color: C.orange, paddingTop: 3 }}>{n}</div>
+      <div style={{ fontFamily: "'Poppins',sans-serif", fontSize: "0.66rem", fontWeight: 700, color: C.orange, paddingTop: 3 }}>{n}</div>
       <div>
-        <div style={{ fontFamily: "'Syne',sans-serif", fontSize: "0.93rem", fontWeight: 700, color: C.navy, marginBottom: 4 }}>{t}</div>
+        <div style={{ fontFamily: "'Poppins',sans-serif", fontSize: "0.93rem", fontWeight: 700, color: C.navy, marginBottom: 4 }}>{t}</div>
         <p style={{ fontSize: "0.82rem", color: C.mid, lineHeight: 1.65 }}>{d}</p>
       </div>
     </div>
@@ -48,7 +48,7 @@ export const Why = () => {
         </div>
       </Reveal>
       <div>
-        <SHead eyebrow="Why HoooM" title={`Focused on what <span style="font-style:italic;font-family:'Instrument Serif',serif;font-weight:400;color:${C.orange}">actually matters.</span>`} sub="We build focused companies around everyday needs. Our brands are designed to create measurable value across business, health, and finance."/>
+        <SHead eyebrow="Why HoooM" title={`Focused on what <span style="font-style:italic;font-family:'Poppins',sans-serif;font-weight:400;color:${C.orange}">actually matters.</span>`} sub="We build focused companies around everyday needs. Our brands are designed to create measurable value across business, health, and finance."/>
         <div style={{ marginTop:36 }}>
           {pillars.map((p,i)=>(
             <Reveal key={p.n} delay={i*60}><Pillar {...p}/></Reveal>

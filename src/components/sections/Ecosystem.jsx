@@ -47,11 +47,11 @@ const EcoCard = ({ n, icon: Icon, name, desc, bg, dark, img }) => {
       </div>
 
       <div style={{ position:"relative", zIndex:1 }}>
-        <div style={{ fontFamily:"'Syne',sans-serif", fontSize:"0.65rem", fontWeight:700, letterSpacing:"0.12em", color:numC, marginBottom: isMob?32:44 }}>{n}</div>
+        <div style={{ fontFamily:"'Poppins',sans-serif", fontSize:"0.65rem", fontWeight:700, letterSpacing:"0.12em", color:numC, marginBottom: isMob?32:44 }}>{n}</div>
         <div style={{ width:44, height:44, borderRadius:12, background:iconBg, display:"flex", alignItems:"center", justifyContent:"center", marginBottom:14, backdropFilter:"blur(8px)" }}>
           <Icon size={20} color={tc} strokeWidth={2.5} />
         </div>
-        <div style={{ fontFamily:"'Syne',sans-serif", fontSize: isMob?"0.95rem":"1.05rem", fontWeight:700, color:tc, marginBottom:8, lineHeight:1.2 }}>{name}</div>
+        <div style={{ fontFamily:"'Poppins',sans-serif", fontSize: isMob?"0.95rem":"1.05rem", fontWeight:700, color:tc, marginBottom:8, lineHeight:1.2 }}>{name}</div>
         <p style={{ fontSize:"0.8rem", lineHeight:1.6, color:dim, maxWidth:"90%", fontWeight:500 }}>{desc}</p>
         <div style={{ position:"absolute", bottom:-24, right:0, width:28, height:28, borderRadius:"50%", background:hov?C.orange:iconBg, color:hov?"#fff":tc, display:"flex", alignItems:"center", justifyContent:"center", fontSize:"0.8rem", transition:"all .3s", transform:hov?"rotate(45deg) scale(1.1)":"none" }}>↗</div>
       </div>
@@ -88,7 +88,7 @@ export const Ecosystem = () => {
   const cols = isMob ? "1fr" : isTab ? "1fr 1fr" : "repeat(4,1fr)";
   return (
     <section id="ecosystem" style={{ padding:`80px ${isTab?"20px":"56px"}`, background:C.white }}>
-      <SHead eyebrow="Our Ecosystem" title={`Four companies. <span style="font-style:italic;font-family:'Instrument Serif',serif;font-weight:400;color:${C.orange}">One vision.</span>`} sub="We build focused companies around everyday needs — from software to wellness to financial tools."/>
+      <SHead eyebrow="Our Ecosystem" title={`Four companies. <span style="font-style:italic;font-family:'Poppins',sans-serif;font-weight:400;color:${C.orange}">One vision.</span>`} sub="We build focused companies around everyday needs — from software to wellness to financial tools."/>
       <div style={{ display:"grid", gridTemplateColumns:cols, gap:14, marginTop:48 }}>
         {ecoCards.map((c,i)=>(
           <Reveal key={c.n} delay={i*70}><EcoCard {...c}/></Reveal>

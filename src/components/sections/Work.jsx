@@ -22,8 +22,8 @@ const WorkCard = ({ tag, name, type, src, url }) => {
       style={{ borderRadius: 16, overflow: "hidden", background: C.white, transform: hov ? "translateY(-4px)" : "none", boxShadow: hov ? "0 16px 44px rgba(14,19,34,.1)" : "none", transition: "all .28s", height: "100%" }}>
       <Ph src={src} label={`${name} Screenshot`} height={180} />
       <div style={{ padding: "18px 20px" }}>
-        <div style={{ fontFamily: "'Syne',sans-serif", fontSize: "0.66rem", fontWeight: 700, color: C.cyan, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 5 }}>{tag}</div>
-        <div style={{ fontFamily: "'Syne',sans-serif", fontSize: "1.05rem", fontWeight: 800, color: C.navy, marginBottom: 2 }}>{name}</div>
+        <div style={{ fontFamily: "'Poppins',sans-serif", fontSize: "0.66rem", fontWeight: 700, color: C.cyan, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 5 }}>{tag}</div>
+        <div style={{ fontFamily: "'Poppins',sans-serif", fontSize: "1.05rem", fontWeight: 800, color: C.navy, marginBottom: 2 }}>{name}</div>
         <div style={{ fontSize: "0.78rem", color: C.mid }}>{type}</div>
       </div>
     </div>
@@ -55,7 +55,7 @@ export const Work = () => {
   const cols = isMob?"1fr":isTab?"1fr 1fr":"repeat(3,1fr)";
   return (
     <section id="work" style={{ padding:`80px ${isTab?"20px":"56px"}`, background:C.off }}>
-      <SHead eyebrow="Our Work" title={`Proof through <span style="font-style:italic;font-family:'Instrument Serif',serif;font-weight:400;color:${C.orange}">execution.</span>`} sub="Across industries, our companies have delivered meaningful results for clients and communities."/>
+      <SHead eyebrow="Our Work" title={`Proof through <span style="font-style:italic;font-family:'Poppins',sans-serif;font-weight:400;color:${C.orange}">execution.</span>`} sub="Across industries, our companies have delivered meaningful results for clients and communities."/>
       <div style={{ display:"grid", gridTemplateColumns:cols, gap:16, marginTop:48 }}>
         {works.map((w,i)=>(
           <Reveal key={w.name} delay={i*60}><WorkCard {...w}/></Reveal>

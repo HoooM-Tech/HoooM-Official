@@ -25,9 +25,9 @@ export const Hero = () => {
         <div style={{ display: "inline-flex", alignItems: "center", gap: 8, background: C.orange, color: "#fff", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "5px 13px", borderRadius: 100, marginBottom: 22, animation: "fadeUp .7s .2s both" }}>
           🌍 Lagos, Nigeria · Est. 2020
         </div>
-        <h1 style={{ fontFamily: "'Syne',sans-serif", fontSize: `clamp(2.2rem,${isTab ? "7vw" : "5.2vw"}, 5rem)`, fontWeight: 800, lineHeight: 1.02, letterSpacing: "-0.03em", color: C.navy, animation: "fadeUp .8s .35s both" }}>
+        <h1 style={{ fontFamily: "'Poppins',sans-serif", fontSize: `clamp(2.2rem,${isTab ? "7vw" : "5.2vw"}, 5rem)`, fontWeight: 800, lineHeight: 1.02, letterSpacing: "-0.03em", color: C.navy, animation: "fadeUp .8s .35s both" }}>
           Building<br />Companies<br />That Solve<br />
-          <span style={{ color: C.orange, fontStyle: "italic", fontFamily: "'Instrument Serif',serif", fontWeight: 400 }}>Real Problems.</span>
+          <span style={{ color: C.orange, fontStyle: "italic", fontFamily: "'Poppins',sans-serif", fontWeight: 400 }}>Real Problems.</span>
         </h1>
         <p style={{ marginTop: 20, fontSize: isMob ? "0.93rem" : "1rem", color: C.mid, lineHeight: 1.75, maxWidth: 460, animation: "fadeUp .8s .5s both" }}>
           HoooM is a multi-industry company creating impact through technology, branding, wellness, and smarter financial tools.
@@ -61,8 +61,8 @@ export const Hero = () => {
               <div style={{ fontSize: "0.68rem", color: C.mid }}>4 companies · multiple industries</div>
             </div>
           </div>
-          <div style={{ position: "absolute", top: -16, right: -16, background: C.orange, color: "#fff", borderRadius: 12, padding: "12px 15px", fontFamily: "'Syne',sans-serif", fontSize: "1.3rem", fontWeight: 800, lineHeight: 1, boxShadow: "0 8px 22px rgba(208,103,20,.32)" }}>
-            4<div style={{ fontSize: "0.65rem", fontWeight: 500, fontFamily: "'Inter',sans-serif", opacity: .85, marginTop: 2 }}>Companies</div>
+          <div style={{ position: "absolute", top: -16, right: -16, background: C.orange, color: "#fff", borderRadius: 12, padding: "12px 15px", fontFamily: "'Poppins',sans-serif", fontSize: "1.3rem", fontWeight: 800, lineHeight: 1, boxShadow: "0 8px 22px rgba(208,103,20,.32)" }}>
+            4<div style={{ fontSize: "0.65rem", fontWeight: 500, fontFamily: "'Open Sans',sans-serif", opacity: .85, marginTop: 2 }}>Companies</div>
           </div>
         </div>
       )}

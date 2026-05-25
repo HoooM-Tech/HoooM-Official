@@ -54,7 +54,7 @@ export const Nav = () => {
           <button onClick={()=>setOpen(false)} style={{ position:"absolute", top:20, right:24, fontSize:"1.5rem", background:"none", border:"none", color:C.navy }}>✕</button>
           {links.map(([l,h])=>(
             <a key={l} href={h} onClick={()=>setOpen(false)}
-              style={{ fontFamily:"'Syne',sans-serif", fontSize:"clamp(1.6rem,6vw,2.2rem)", fontWeight:800, color:C.navy, textDecoration:"none" }}>{l}</a>
+              style={{ fontFamily:"'Poppins',sans-serif", fontSize:"clamp(1.6rem,6vw,2.2rem)", fontWeight:800, color:C.navy, textDecoration:"none" }}>{l}</a>
           ))}
           <div style={{ marginTop:16 }}><Btn href="#contact" variant="solid" onClick={()=>setOpen(false)}>Work With Us</Btn></div>
         </div>

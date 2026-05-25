@@ -28,7 +28,7 @@ export const Footer = () => {
           ["Connect",    ["Instagram","LinkedIn","Twitter / X","admin@hooom.org", "it@hooom.org"], ["#","#","#","mailto:admin@hooom.org", "mailto:it@hooom.org" ]],
         ].map(([title,links,hrefs])=>(
           <div key={title}>
-            <div style={{ fontFamily:"'Syne',sans-serif", fontSize:"0.7rem", fontWeight:700, letterSpacing:"0.1em", textTransform:"uppercase", color:C.cyan, marginBottom:14 }}>{title}</div>
+            <div style={{ fontFamily:"'Poppins',sans-serif", fontSize:"0.7rem", fontWeight:700, letterSpacing:"0.1em", textTransform:"uppercase", color:C.cyan, marginBottom:14 }}>{title}</div>
             <ul style={{ listStyle:"none" }}>
               {links.map((l,i)=>(
                 <li key={l} style={{ marginBottom:9 }}>

@@ -21,7 +21,7 @@ export const FAQ = () => {
   return (
     <section id="faq" style={{ padding:`80px ${isTab?"20px":"56px"}`, background:C.off, display:"grid", gridTemplateColumns:isTab?"1fr":"1fr 1.4fr", gap:isTab?48:64, alignItems:"start" }}>
       <div style={isTab?{}:{ position:"sticky", top:96 }}>
-        <SHead eyebrow="FAQ" title={`Common <span style="font-style:italic;font-family:'Instrument Serif',serif;font-weight:400;color:${C.orange}">questions.</span>`} sub="Can't find what you need? Reach out — we reply within 24 hours."/>
+        <SHead eyebrow="FAQ" title={`Common <span style="font-style:italic;font-family:'Poppins',sans-serif;font-weight:400;color:${C.orange}">questions.</span>`} sub="Can't find what you need? Reach out — we reply within 24 hours."/>
         <div style={{ marginTop:24 }}><Btn href="#contact" variant="solid">Ask a Question</Btn></div>
       </div>
       <Reveal>
@@ -29,7 +29,7 @@ export const FAQ = () => {
           {faqs.map((f,i)=>(
             <div key={i} style={{ borderTop:`1px solid ${C.faint}`, ...(i===faqs.length-1?{borderBottom:`1px solid ${C.faint}`}:{}) }}>
               <button onClick={()=>setOpen(open===i?-1:i)}
-                style={{ width:"100%", background:"none", border:"none", display:"flex", justifyContent:"space-between", alignItems:"center", padding:"18px 0", fontFamily:"'Syne',sans-serif", fontSize:"0.92rem", fontWeight:700, color:open===i?C.orange:C.navy, cursor:"pointer", textAlign:"left", gap:14, transition:"color .2s" }}>
+                style={{ width:"100%", background:"none", border:"none", display:"flex", justifyContent:"space-between", alignItems:"center", padding:"18px 0", fontFamily:"'Poppins',sans-serif", fontSize:"0.92rem", fontWeight:700, color:open===i?C.orange:C.navy, cursor:"pointer", textAlign:"left", gap:14, transition:"color .2s" }}>
                 {f.q}
                 <div style={{ width:26, height:26, borderRadius:"50%", background:open===i?C.orange:C.navy, color:"#fff", display:"flex", alignItems:"center", justifyContent:"center", fontSize:"0.95rem", flexShrink:0, transform:open===i?"rotate(45deg)":"none", transition:"all .25s" }}>+</div>
               </button>

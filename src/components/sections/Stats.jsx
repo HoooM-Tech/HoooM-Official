@@ -11,7 +11,7 @@ export const Stats = () => {
       {stats.map(([n,l],i)=>(
         <Reveal key={l} delay={i*70}>
           <div style={{ textAlign:"center" }}>
-            <div style={{ fontFamily:"'Syne',sans-serif", fontSize: isMob?"2.6rem":"3.2rem", fontWeight:800, color:C.orange, lineHeight:1, letterSpacing:"-0.03em" }}>{n}</div>
+            <div style={{ fontFamily:"'Poppins',sans-serif", fontSize: isMob?"2.6rem":"3.2rem", fontWeight:800, color:C.orange, lineHeight:1, letterSpacing:"-0.03em" }}>{n}</div>
             <div style={{ fontSize:"0.82rem", color:"rgba(255,255,255,.5)", marginTop:8, fontWeight:500 }}>{l}</div>
           </div>
         </Reveal>

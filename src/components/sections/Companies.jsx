@@ -18,8 +18,8 @@ import imgAuto from "../../assets/IMG_2532.webp";
 const CoRow = ({ n, name, tag, intro, svcs, chips, clabel, src, Component, isTab }) => (
   <div style={{ display: "grid", gridTemplateColumns: isTab ? "1fr" : "180px 1fr 240px", gap: isTab ? "16px" : "40px", padding: "44px 0", borderTop: `1px solid ${C.faint}` }}>
     <div>
-      <div style={{ fontFamily: "'Syne',sans-serif", fontSize: "0.66rem", fontWeight: 700, color: C.cyan, letterSpacing: "0.1em", marginBottom: 8 }}>{n}</div>
-      <div style={{ fontFamily: "'Syne',sans-serif", fontSize: isTab ? "1.1rem" : "1.25rem", fontWeight: 800, color: C.navy, lineHeight: 1.2, marginBottom: 8 }}>{name}</div>
+      <div style={{ fontFamily: "'Poppins',sans-serif", fontSize: "0.66rem", fontWeight: 700, color: C.cyan, letterSpacing: "0.1em", marginBottom: 8 }}>{n}</div>
+      <div style={{ fontFamily: "'Poppins',sans-serif", fontSize: isTab ? "1.1rem" : "1.25rem", fontWeight: 800, color: C.navy, lineHeight: 1.2, marginBottom: 8 }}>{name}</div>
       <span style={{ background: C.off, borderRadius: 100, fontSize: "0.68rem", fontWeight: 600, color: C.mid, padding: "3px 11px", display: "inline-block" }}>{tag}</span>
     </div>
     <div>
@@ -58,7 +58,7 @@ export const Companies = () => {
   const { isTab } = useBreakpoint();
   return (
     <section id="companies" style={{ padding:`80px ${isTab?"20px":"56px"}`, background:C.white }}>
-      <SHead eyebrow="Our Companies" title={`Specialized. <span style="font-style:italic;font-family:'Instrument Serif',serif;font-weight:400;color:${C.orange}">Interconnected.</span>`}/>
+      <SHead eyebrow="Our Companies" title={`Specialized. <span style="font-style:italic;font-family:'Poppins',sans-serif;font-weight:400;color:${C.orange}">Interconnected.</span>`}/>
       <div style={{ marginTop:56 }}>
         {companies.map((c,i)=>(
           <Reveal key={c.n} delay={60}><CoRow {...c} isTab={isTab}/></Reveal>
