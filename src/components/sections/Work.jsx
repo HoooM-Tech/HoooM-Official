@@ -13,6 +13,7 @@ import w4 from "../../assets/IMG_2525.webp";
 import w5 from "../../assets/IMG_2530.webp";
 import w6 from "../../assets/IMG_2536.webp";
 import w7 from "../../assets/trueconnect.png";
+import w8 from "../../assets/physifit.png";
 
 /* ── WORK CARD ── */
 const WorkCard = ({ tag, name, type, src, url }) => {
@@ -48,6 +49,7 @@ const works = [
   { tag: "Orbbit by HoooM", name: "GAH Awards", type: "Campaign Strategy", src: w5, url: "#" },
   { tag: "Orbbit by HoooM", name: "Dice Africa", type: "Creative Direction", src: w6, url: "#" },
   { tag: "Tech by HoooM", name: "True Connect", type: "Mobile & Web App", src: w7, url: "https://trueapp.trueconnectllc.com/" },
+  { tag: "Tech by HoooM", name: "PhysiFit", type: "Fitness & Wellness Platform", src: w8, url: "https://physifit.co/" },
 ];
 
 export const Work = () => {
